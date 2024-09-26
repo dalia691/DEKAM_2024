@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentation du Monde</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explorez les Aliments du Monde</h1>
+        <p>Cliquez sur un continent pour découvrir les plats traditionnels de cette région.</p>
+    </header>
+
+    <section class="carte-monde">
+        <h2>Carte Interactive</h2>
+        <!-- Carte image cliquable -->
+        <img src="carte-monde.jpg" alt="Carte du monde" usemap="#worldmap">
+
+        <!-- Définition des zones cliquables avec des liens vers différentes pages -->
+        <map name="worldmap">
+            <area shape="rect" coords="60,20,120,80" alt="Europe" href="europe.html">
+            <area shape="rect" coords="140,100,200,160" alt="Afrique" href="afrique.html">
+            <area shape="rect" coords="200,20,260,80" alt="Asie" href="asie.html">
+            <!-- Ajouter d'autres zones pour les autres continents -->
+        </map>
+    </section>
+
+    <footer>
+        <p>Explorez les différentes cultures à travers leurs plats traditionnels.</p>
+        <a href="quiz.html">Testez vos connaissances avec un quiz sur les aliments du monde !</a>
+    </footer>
+</body>
+</html>
 
