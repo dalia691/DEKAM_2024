@@ -20,17 +20,8 @@
         }
         .content {
             padding: 20px;
-            text-align: center;
-        }
-        .content h2 {
-            color: #333;
-        }
-        .content p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #333;
-            max-width: 700px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 0 auto;
         }
         /* Style du menu de navigation */
         .navbar {
@@ -49,14 +40,34 @@
             background-color: #666;
             border-radius: 5px;
         }
-        /* Style des liens vers les PDF */
-        .pdf-link {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: bold;
+        /* Style des sections d'actualité */
+        .news-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .pdf-link:hover {
-            text-decoration: underline;
+        .news-item img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .news-content {
+            max-width: 650px;
+        }
+        .news-content h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        .news-content p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -65,35 +76,41 @@
     <!-- En-tête de la page -->
     <header>
         <h1>Actualité - Rezki Ouali</h1>
-        <p>Les dernières nouvelles et événements de l'artiste kabyle Rezki Ouali</p>
+        <p>Les dernières nouvelles et événements à venir</p>
     </header>
 
     <!-- Menu de navigation -->
     <nav class="navbar">
         <a href="index.html">Accueil</a>
-        <a href="Actualite.html">Actualité</a>
-        <a href="Biographie.html">Biographie</a>
-        <a href="Musique.html">Musique</a>
+        <a href="actualite.html">Actualité</a>
+        <a href="biographie.html">Biographie</a>
+        <a href="musique.html">Musique</a>
     </nav>
 
     <!-- Contenu principal -->
     <div class="content">
-        <h2>Les prochains événements de Rezki Ouali</h2>
         
-        <p>Rezki Ouali, l’artiste talentueux qui allie tradition et modernité, vous invite à découvrir ses prochains concerts qui promettent des moments inoubliables. Deux événements exceptionnels sont à ne pas manquer pour bien commencer l'année :</p>
-        
-        <h2>1. Concert du 11 janvier 2025 à La Rochelle</h2>
-        <p>Rezki Ouali sera en concert à La Rochelle le 11 janvier 2025 pour célébrer la nouvelle année berbère ! Un événement spécial où l'artiste fera résonner les rythmes traditionnels kabyles tout en offrant une performance moderne et poétique. Venez nombreux pour fêter ensemble cette tradition ancestrale avec une touche musicale contemporaine.</p>
-        <p><a href="concert_la_rochelle.pdf" class="pdf-link" target="_blank">Téléchargez le PDF de l'événement ici</a></p>
-        
-        <h2>2. Spectacle Cabaret Sauvage - 1er février 2025</h2>
-        <p>Le 1er février 2025, Rezki Ouali vous invite au Cabaret Sauvage pour un spectacle unique. Cette performance sera l'occasion de découvrir son répertoire dans un cadre intimiste, alliant musique, poésie et ambiance conviviale. Une soirée inoubliable pour les amateurs de musique kabyle et de culture berbère !</p>
-        <p><a href="spectacle_cabaret_sauvage.pdf" class="pdf-link" target="_blank">Téléchargez le PDF de l'événement ici</a></p>
-    </div>
+        <!-- Actualité 1 -->
+        <div class="news-item">
+            <img src="concert-la-rochelle.pdf.jpg" alt="Affiche du concert à La Rochelle">
+            <div class="news-content">
+                <h3>Concert à La Rochelle</h3>
+                <p>Rezki Ouali vous invite à célébrer la nouvelle année berbère lors d'un concert exceptionnel. Rendez-vous le <strong>11 janvier</strong> à <strong>La Rochelle</strong> pour une soirée musicale unique, où la culture kabyle sera à l’honneur. Ce concert est l’occasion de découvrir ses nouveaux morceaux ainsi que des classiques appréciés de tous.</p>
+                <p><a href="concert-la-rochelle.pdf" target="_blank">Voir le PDF</a></p>
+            </div>
+        </div>
 
-    <script>
-        // Ici tu peux ajouter des fonctionnalités JS si nécessaire
-    </script>
+        <!-- Actualité 2 -->
+        <div class="news-item">
+            <img src="spectacle-cabaret-sauvage.pdf.jpg" alt="Affiche du spectacle Cabaret Sauvage">
+            <div class="news-content">
+                <h3>Spectacle au Cabaret Sauvage</h3>
+                <p>Ne manquez pas le prochain spectacle de Rezki Ouali au <strong>Cabaret Sauvage</strong> le <strong>1er février</strong>. Une expérience immersive dans l'univers de la musique kabyle, avec des performances inédites et des invités spéciaux. Ce spectacle promet une ambiance chaleureuse et festive, fidèle à l'esprit kabyle.</p>
+                <p><a href="spectacle-cabaret-sauvage.pdf" target="_blank">Voir le PDF</a></p>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
