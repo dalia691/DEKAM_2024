@@ -3,19 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezki OOuali</title>
-    <h1>Site d'information sur Rezki Ouali</h1>
-    <link rel="stylesheet" href="styles.css">
+    <title>Rezki Ouali - Artiste Kabyle</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        /* Style du diaporama */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            max-height: 400px;
+        }
+        .slide {
+            display: none;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        /* Animation de transition */
+        .fade {
+            animation: fadeEffect 1.5s;
+        }
+        @keyframes fadeEffect {
+            from {opacity: 0.4;}
+            to {opacity: 1;}
+        }
+    </style>
 </head>
 <body>
+
+    <!-- En-tête de la page -->
     <header>
+        <h1>Rezki Ouali</h1>
+        <p>Un artiste qui modernise la musique kabyle avec passion et authenticité</p>
+    </header>
 
-    
+    <!-- Diaporama de photos -->
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="photo1.jpg" alt="Rezki Ouali Photo 1">
+        </div>
+        <div class="slide fade">
+            <img src="photo2.jpg" alt="Rezki Ouali Photo 2">
+        </div>
+        <div class="slide fade">
+            <img src="photo3.jpg" alt="Rezki Ouali Photo 3">
+        </div>
+    </div>
 
-    <footer>
-        <p>Rezki Ouali.</p>
-        <a href="quiz.html">Testez vos connaissances avec un quiz sur les aliments du monde !</a>
-    </footer>
-</body>
-</html>
-
+    <!-- Contenu principal -->
+    <div class="content">
+        <p>Rezki est apprécié pour sa capacité à moderniser la musique kabyle tout en respectant ses racines. 
+        Ses morceaux, tels que <a href="https://www.youtube.com/results?search_query=rezki+ouali+bella" target="_blank">"Bella"</a> et 
+        <a href="https://www.youtube.com/results?search_query=rezki+ouali+yir+lqum" target="_blank">"Yir Lqum"</a>, 
+        intègrent souvent des rythmes traditionnels, des mélodies kabyles, et des paroles pleines de poésie. Son style se distingue par 
+        une voix chaleureuse et des sonorités qui plongent l'auditeur dans l’âme kabyle
