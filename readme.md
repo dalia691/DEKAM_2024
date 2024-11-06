@@ -1,4 +1,4 @@
 # Bienvenu dans notre site
 
-Visiter mon site à l'adresse:https://dalia691.github.io/DEKAM_2024/
+Visiter mon site à l'adresse:https://github.com/dalia691/DEKAM_2024
 
