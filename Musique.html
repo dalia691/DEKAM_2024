@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualité - Rezki Ouali</title>
+    <title>Musique - Rezki Ouali</title>
     <style>
         /* Style général */
         body {
@@ -49,14 +49,27 @@
             background-color: #666;
             border-radius: 5px;
         }
-        /* Style des liens vers les PDF */
-        .pdf-link {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: bold;
+        /* Style de la liste des morceaux */
+        .song-list {
+            list-style-type: none;
+            padding: 0;
         }
-        .pdf-link:hover {
-            text-decoration: underline;
+        .song-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        .song-list li h3 {
+            margin: 0;
+            color: #444;
+        }
+        .song-list li p {
+            margin: 5px 0;
+            color: #777;
         }
     </style>
 </head>
@@ -64,36 +77,44 @@
 
     <!-- En-tête de la page -->
     <header>
-        <h1>Actualité - Rezki Ouali</h1>
-        <p>Les dernières nouvelles et événements de l'artiste kabyle Rezki Ouali</p>
+        <h1>Musique - Rezki Ouali</h1>
+        <p>Découvrez les morceaux incontournables de l'artiste kabyle Rezki Ouali</p>
     </header>
 
     <!-- Menu de navigation -->
     <nav class="navbar">
         <a href="index.html">Accueil</a>
-        <a href="actualite.html">Actualité</a>
-        <a href="biographie.html">Biographie</a>
-        <a href="musique.html">Musique</a>
+        <a href="Actualite.html">Actualité</a>
+        <a href="Biographie.html">Biographie</a>
+        <a href="Musique.html">Musique</a>
     </nav>
 
     <!-- Contenu principal -->
     <div class="content">
-        <h2>Les prochains événements de Rezki Ouali</h2>
+        <h2>Les Musiques de Rezki Ouali</h2>
         
-        <p>Rezki Ouali, l’artiste talentueux qui allie tradition et modernité, vous invite à découvrir ses prochains concerts qui promettent des moments inoubliables. Deux événements exceptionnels sont à ne pas manquer pour bien commencer l'année :</p>
-        
-        <h2>1. Concert du 11 janvier 2025 à La Rochelle</h2>
-        <p>Rezki Ouali sera en concert à La Rochelle le 11 janvier 2025 pour célébrer la nouvelle année berbère ! Un événement spécial où l'artiste fera résonner les rythmes traditionnels kabyles tout en offrant une performance moderne et poétique. Venez nombreux pour fêter ensemble cette tradition ancestrale avec une touche musicale contemporaine.</p>
-        <p><a href="concert_la_rochelle.pdf" class="pdf-link" target="_blank">Téléchargez le PDF de l'événement ici</a></p>
-        
-        <h2>2. Spectacle Cabaret Sauvage - 1er février 2025</h2>
-        <p>Le 1er février 2025, Rezki Ouali vous invite au Cabaret Sauvage pour un spectacle unique. Cette performance sera l'occasion de découvrir son répertoire dans un cadre intimiste, alliant musique, poésie et ambiance conviviale. Une soirée inoubliable pour les amateurs de musique kabyle et de culture berbère !</p>
-        <p><a href="spectacle_cabaret_sauvage.pdf" class="pdf-link" target="_blank">Téléchargez le PDF de l'événement ici</a></p>
-    </div>
+        <p>Rezki Ouali a su se faire une place parmi les artistes les plus respectés de la scène kabyle. Son répertoire musical est un mélange unique de tradition et de modernité, où chaque chanson est une exploration de l’âme berbère, avec des mélodies envoûtantes et des paroles poétiques. Voici une sélection de ses morceaux :</p>
 
-    <script>
-        // Ici tu peux ajouter des fonctionnalités JS si nécessaire
-    </script>
+        <!-- Liste des morceaux -->
+        <ul class="song-list">
+            <li>
+                <h3>Bella</h3>
+                <p>Un morceau incontournable qui mêle des rythmes traditionnels kabyles à des influences modernes. "Bella" raconte une histoire d’amour pleine de passion et de poésie.</p>
+                <p><a href="https://www.example.com/bella.mp3" target="_blank">Écouter la chanson</a></p>
+            </li>
+            <li>
+                <h3>Yir Lqum</h3>
+                <p>Un autre hit de Rezki Ouali, "Yir Lqum" fusionne des sonorités kabyles classiques avec une touche de modernité, créant une atmosphère intime et captivante.</p>
+                <p><a href="https://www.example.com/yirlqum.mp3" target="_blank">Écouter la chanson</a></p>
+            </li>
+            <li>
+                <h3>Axxam</h3>
+                <p>Une chanson qui fait appel aux racines profondes de la culture kabyle tout en y apportant un souffle nouveau. "Axxam" est une véritable immersion dans l’univers kabyle.</p>
+                <p><a href="https://www.example.com/axxam.mp3" target="_blank">Écouter la chanson</a></p>
+            </li>
+            <!-- Ajoute d'autres morceaux ici -->
+        </ul>
+    </div>
 
 </body>
 </html>
