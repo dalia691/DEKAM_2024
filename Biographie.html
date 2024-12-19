@@ -7,51 +7,84 @@
     <style>
         /* Style général */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
+            color: #212529;
+            line-height: 1.6;
         }
         header {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-        .content {
-            padding: 20px;
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 40px 20px;
             text-align: center;
         }
-        .content h2 {
-            color: #333;
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
-        .content p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #333;
-            max-width: 700px;
-            margin: 20px auto;
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
         }
-        /* Style du menu de navigation */
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
+        nav {
+            background-color: #495057;
             padding: 10px 0;
         }
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
+        nav a {
+            color: #ffffff;
             text-decoration: none;
-            font-size: 16px;
-        }
-        .navbar a:hover {
-            background-color: #666;
+            margin: 0 15px;
+            font-size: 1em;
+            padding: 8px 12px;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        /* Style audio */
+        nav a:hover {
+            background-color: #6c757d;
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .content h2 {
+            color: #343a40;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+        }
+        .content p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .content p strong {
+            color: #495057;
+        }
+        .content .highlight {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-left: 5px solid #17a2b8;
+            margin-bottom: 20px;
+        }
         audio {
-            margin-top: 10px;
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+        }
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -60,11 +93,11 @@
     <!-- En-tête de la page -->
     <header>
         <h1>Biographie - Rezki Ouali</h1>
-        <p>Découvrez l'histoire de l'artiste kabyle Rezki Ouali et son parcours musical</p>
+        <p>Plongez dans l'univers captivant de l'artiste kabyle Rezki Ouali</p>
     </header>
 
     <!-- Menu de navigation -->
-    <nav class="navbar">
+    <nav>
         <a href="index.html">Accueil</a>
         <a href="Actualité.html">Actualité</a>
         <a href="Biographie.html">Biographie</a>
@@ -75,20 +108,41 @@
     <div class="content">
         <h2>Biographie de Rezki Ouali</h2>
         
-        <p>Rezki Ouali est un chanteur kabyle reconnu, dont les œuvres rendent hommage à la culture berbère. Né en Kabylie, il puise dans son héritage pour créer des chansons qui mélangent habilement tradition et modernité. Passionné par la musique et profondément attaché aux valeurs de son peuple, Rezki utilise sa voix comme un puissant vecteur pour transmettre l’histoire, les émotions et la poésie qui caractérisent la culture kabyle.</p>
+        <p><strong>Rezki Ouali</strong>, un talent à l'état pur, est un chanteur kabyle reconnu pour ses œuvres qui rendent hommage à la culture berbère. Né le 19 septembre 1992 à <strong>Larbaa Nath Irathen</strong>, dans la wilaya de Tizi-Ouzou, il a su conjuguer son héritage culturel avec des créations musicales modernes et captivantes.</p>
 
-        <p>Sa musique, à la fois moderne et authentique, fusionne des éléments traditionnels de la musique kabyle avec des sonorités contemporaines. Grâce à cette fusion unique, Rezki Ouali a su séduire un large public, aussi bien en Algérie qu'à l’international. Chaque morceau qu’il crée est une véritable invitation à découvrir l’âme profonde de la Kabylie, à travers des paroles poétiques et des mélodies envoûtantes qui résonnent profondément dans le cœur de ses auditeurs.</p>
-        
-        <h2>Interview exclusive avec Rezki Ouali</h2>
-        <p>Nous avons eu le plaisir de réaliser un entretien exclusif avec Rezki Ouali, où il nous raconte son parcours, ses inspirations et ses futurs projets musicaux. Découvrez ses mots inspirants dans cet enregistrement audio :</p>
+        <div class="highlight">
+            <p>Lauréat de nombreux festivals prestigieux, Rezki a remporté : 
+            <ul>
+                <li>Le 1<sup>er</sup> prix du festival de la chanson amazigh (2012, Béjaïa).</li>
+                <li>Le 1<sup>er</sup> prix du festival chanson kabyle (2013, Tizi-Ouzou).</li>
+                <li>Le 2<sup>e</sup> prix du festival Chaâbi (2014, Alger).</li>
+                <li>Le concours national "Alhane Wa Chabab" (2015).</li>
+                <li>La distinction au festival de la chanson chaâbi en hommage à Kamel Messaoudi (2016, France).</li>
+            </ul>
+            </p>
+        </div>
 
-        <!-- Lien pour écouter le mémo vocal -->
+        <p>Fort de cette expérience, il a produit un album remarquable en 2018 intitulé <em>"A Yema Zighen"</em> et collaboré avec des artistes de renom tels que <strong>Idir</strong>, <strong>Cheb Khaled</strong>, et le défunt <strong>Kheloui Lounes</strong>.</p>
+
+        <!-- Nouvelle section pour l'interview -->
+        <h2>Interview exclusive</h2>
+        <p>Nous avons eu l'honneur de réaliser une interview avec Rezki Ouali, qui partage ses inspirations et sa vision pour l’avenir de la musique kabyle. Découvrez ce moment unique :</p>
+
+        <!-- Lecteur audio -->
         <audio controls>
-            <source src="interview_rezki_ouali.mp3" type="audio/mpeg">
-            Votre navigateur ne supporte pas l'audio HTML5. <a href="interview_rezki_ouali.mp3">Cliquez ici pour écouter l'interview.</a>
+            <source src="memo-interview-rezki.mp3" type="audio/mp3">
+            Votre navigateur ne supporte pas l'élément audio.
         </audio>
+        <p style="text-align: center;"><em>Cliquez sur lecture pour écouter l’interview</em></p>
     </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 - Tous droits réservés. Créé avec passion pour la culture kabyle.</p>
+    </footer>
 
 </body>
 </html>
+
+ 
 
