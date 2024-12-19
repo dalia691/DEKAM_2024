@@ -5,49 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biographie - Rezki Ouali</title>
     <style>
-        /* Style général */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
+            background-color: #e8f0fe;
             color: #333;
         }
 
         header {
-            background-color: #343a40;
+            background-color: #003366;
             color: white;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2.5em;
             margin: 0;
+            font-size: 2.5em;
         }
 
         header p {
+            margin: 5px 0 0;
             font-size: 1.2em;
-            margin: 10px 0 0 0;
         }
 
         nav {
-            background-color: #495057;
+            background-color: #00509e;
             padding: 10px 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
+            font-size: 1.1em;
+            padding: 8px 16px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
         nav a:hover {
-            background-color: #6c757d;
+            background-color: #003366;
         }
 
         .container {
@@ -58,34 +59,48 @@
 
         .intro {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .intro p {
             font-size: 1.2em;
             margin: 10px 0;
+            color: #00509e;
         }
 
         .biography-content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
 
-        .text-content {
-            font-size: 1.1em;
+        .biography-content h2 {
+            font-size: 2em;
+            color: #003366;
+            border-bottom: 2px solid #00509e;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .biography-content p {
             line-height: 1.6;
-        }
-
-        .text-content p {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .highlight {
-            background-color: #f1f1f1;
+            background-color: #f0f8ff;
             padding: 15px;
-            border-left: 5px solid #17a2b8;
+            border-left: 5px solid #00509e;
             margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
         }
 
         audio {
@@ -96,7 +111,7 @@
         }
 
         footer {
-            background-color: #343a40;
+            background-color: #003366;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -128,39 +143,33 @@
     <div class="container">
         <div class="intro">
             <h2>Biographie de Rezki Ouali</h2>
-            <p>Découvrez le talent unique de Rezki, entre modernité et traditions kabyles.</p>
+            <p>Un artiste au carrefour des traditions et de la modernité.</p>
         </div>
 
         <div class="biography-content">
-            <!-- Texte de biographie -->
-            <div class="text-content">
-                <p><strong>Rezki Ouali</strong>, un talent à l'état pur, est un chanteur kabyle reconnu pour ses œuvres qui rendent hommage à la culture berbère. Né le 19 septembre 1992 à <strong>Larbaa Nath Irathen</strong>, dans la wilaya de Tizi-Ouzou, il a su conjuguer son héritage culturel avec des créations musicales modernes et captivantes.</p>
+            <p><strong>Rezki Ouali</strong>, un talent à l'état pur, est un chanteur kabyle reconnu pour ses œuvres qui rendent hommage à la culture berbère. Né le 19 septembre 1992 à <strong>Larbaa Nath Irathen</strong>, dans la wilaya de Tizi-Ouzou, il a su conjuguer son héritage culturel avec des créations musicales modernes et captivantes.</p>
 
-                <div class="highlight">
-                    <p><strong>Lauréat de nombreux festivals prestigieux</strong>, Rezki a remporté : 
-                    <ul>
-                        <li>Le 1<sup>er</sup> prix du festival de la chanson amazigh (2012, Béjaïa).</li>
-                        <li>Le 1<sup>er</sup> prix du festival chanson kabyle (2013, Tizi-Ouzou).</li>
-                        <li>Le 2<sup>e</sup> prix du festival Chaâbi (2014, Alger).</li>
-                        <li>Le concours national "Alhane Wa Chabab" (2015).</li>
-                        <li>La distinction au festival de la chanson chaâbi en hommage à Kamel Messaoudi (2016, France).</li>
-                    </ul>
-                    </p>
-                </div>
-
-                <p>Fort de cette expérience, il a produit un album remarquable en 2018 intitulé <em>"A Yema Zighen"</em> et collaboré avec des artistes de renom tels que <strong>Idir</strong>, <strong>Cheb Khaled</strong>, et le défunt <strong>Kheloui Lounes</strong>.</p>
+            <div class="highlight">
+                <p><strong>Lauréat de nombreux festivals prestigieux</strong>, Rezki a remporté : 
+                <ul>
+                    <li>Le 1<sup>er</sup> prix du festival de la chanson amazigh (2012, Béjaïa).</li>
+                    <li>Le 1<sup>er</sup> prix du festival chanson kabyle (2013, Tizi-Ouzou).</li>
+                    <li>Le 2<sup>e</sup> prix du festival Chaâbi (2014, Alger).</li>
+                    <li>Le concours national "Alhane Wa Chabab" (2015).</li>
+                    <li>La distinction au festival de la chanson chaâbi en hommage à Kamel Messaoudi (2016, France).</li>
+                </ul>
+                </p>
             </div>
 
-            <!-- Interview avec lecteur audio -->
-            <div class="text-content">
-                <h2>Interview exclusive</h2>
-                <p>Nous avons eu l'honneur de réaliser une interview avec Rezki Ouali, qui partage ses inspirations et sa vision pour l’avenir de la musique kabyle. Découvrez ce moment unique :</p>
-                <audio controls>
-                    <source src="podcaste.mp3" type="audio/mp3">
-                    Votre navigateur ne supporte pas l'élément audio.
-                </audio>
-                <p style="text-align: center;"><em>Cliquez sur lecture pour écouter l’interview</em></p>
-            </div>
+            <p>Fort de cette expérience, il a produit un album remarquable en 2018 intitulé <em>"A Yema Zighen"</em> et collaboré avec des artistes de renom tels que <strong>Idir</strong>, <strong>Cheb Khaled</strong>, et le défunt <strong>Kheloui Lounes</strong>.</p>
+
+            <h2>Interview exclusive</h2>
+            <p>Nous avons eu l'honneur de réaliser une interview avec Rezki Ouali, qui partage ses inspirations et sa vision pour l’avenir de la musique kabyle. Découvrez ce moment unique :</p>
+            <audio controls>
+                <source src="podcaste.mp3" type="audio/mp3">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+            <p style="text-align: center;"><em>Cliquez sur lecture pour écouter l’interview</em></p>
         </div>
     </div>
 
